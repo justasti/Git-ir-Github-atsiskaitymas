@@ -9,9 +9,9 @@ export default class Tab {
     this.tab = document.createElement('div')
     this.tab.className = 'modal'
 
-    this.closeButton = document.createElement('span')
+    this.closeButton = document.createElement('img')
     this.closeButton.className = 'close_modal'
-    this.closeButton.textContent = '✖'
+    this.closeButton.src = './resources/xmark-solid.svg'
     this.closeButton.addEventListener('click', () => this.tab.remove())
 
 
