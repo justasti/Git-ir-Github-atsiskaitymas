@@ -106,7 +106,8 @@ ul li:hover {
   background-color: #222;
   color: #fff;
   padding: 30px;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .modal .tab_name {
   font-weight: 400;
