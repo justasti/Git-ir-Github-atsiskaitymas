@@ -128,7 +128,8 @@ ul li:hover {
 .modal .close_modal:hover {
   rotate: 90deg;
 }
-.modal img {
+.modal img,
+.modal iframe {
   width: 100%;
   margin-bottom: 30px;
 }
@@ -179,7 +180,8 @@ ul li:hover {
     transform: translate(-50%, -50%);
     overflow-x: hidden;
   }
-  .modal img:not(.close_modal) {
+  .modal img:not(.close_modal)
+  .modal iframe {
     height: 300px;
     object-fit: cover;
   }
