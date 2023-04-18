@@ -14,11 +14,11 @@ body {
   background-image: url('../resources/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom center;
   color: rgb(255, 255, 255, 0.5);
   position: relative;
   isolation: isolate;
-  padding: 90px 10px;
+  padding: 120px 10px;
 }
 .overlay {
   position: absolute;
@@ -29,7 +29,7 @@ body {
 }
 .vertical_line {
   width: 1px;
-  height: 30px;
+  height: 35px;
   background-color: #fff;
 }
 header {
@@ -67,11 +67,16 @@ main {
   text-transform: uppercase;
   font-size: clamp(0.75rem, 2vw, 1.25rem);
   line-height: 1.5rem;
+  letter-spacing: 1px;
 }
 .text a {
   color: inherit;
   text-decoration-style: dotted;
   text-underline-offset: 2px;
+  transition: color 0.5s ease;
+}
+.text a:hover {
+  color: rgba(61, 155, 249, 0.75);
 }
 ul {
   list-style-type: none;
@@ -88,4 +93,9 @@ ul li {
   width: 100%;
   padding: 10px;
   border: 1px solid #fff;
+  transition: 0.5s ease;
+}
+ul li:hover {
+  background-color: #ffffff50;
+  color: #fff;
 }
