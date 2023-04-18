@@ -14,7 +14,7 @@ body {
   background-image: url('../resources/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
+  background-position: top center;
   color: rgb(255, 255, 255, 0.5);
   position: relative;
   isolation: isolate;
@@ -49,19 +49,19 @@ main {
   flex-direction: column;
   align-items: center;
 }
+.text {
+  border-bottom: 1px solid #fff;
+  padding-block: 20px;
+}
 .text h1 {
   text-align: center;
   color: #fff;
   font-weight: 500;
-  font-size: clamp(1.25rem, 4vw, 2rem);
+  font-size: clamp(1.25rem, 5.5vw, 2.5rem);
 
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 20px;
-}
-.text {
-  border-bottom: 1px solid #fff;
-  padding-block: 20px;
 }
 .text p {
   text-transform: uppercase;
@@ -98,4 +98,37 @@ ul li {
 ul li:hover {
   background-color: #ffffff50;
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    padding-block: 10px;
+  }
+  header {
+    width: 95vw;
+    margin-inline: auto;
+  }
+  header img {
+    width: 70px;
+  }
+  .text {
+    width: 100%;
+    padding-block: 40px;
+  }
+  .text h1 {
+    margin-bottom: 40px;
+  }
+  .text p {
+    padding-inline: 30px;
+    text-align: center;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+  ul li {
+    width: 130px;
+  }
 }
